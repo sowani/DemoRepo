@@ -1,21 +1,16 @@
-# Sample yml file.
 language: c
-#sudo: required
 compiler:
-  - gcc
-  - clang
+- gcc
+- clang
 script:
-  - make
-  - if [[true]] ; then ./deploy.sh ; fi
+- make
+- deploy.sh
 
-# deploy:
-#   provider: releases
-#   access_key_id:
-#     secure: "Bmq6dB5Cfwf+LexK8e2uBe4ukmcZIq20qoVw7lEEW1z3qT7Wa/Eld3UhAoMz59Nv8ug9a15UvTJ1iVMSCQGNMiB5JPKj/zG+QHk3Ekg5zDsl4gtCleNwe8uk5tY6P2aBMP7IofBdE/Ez4Gw+GtyZ4r+ARsxdZXI4eyvHy/0Mp50="
-#   file: "demo"
-#   skip_cleanup: true
-#   on:
-#     branch: master
-#     all_branches: true
-#     # tags: true
-
+env:
+  global:
+    secure: E/Tqdc2TSMXA5mh61Y8ti3S0Q8OxZHHQ6IY69l0aLgfzyEQb3elF06qWhHu/2ocIQ7VcO/0Eazpm8mY6vQ5KWUm2QFUKzlR7b8urK1hvbMoKTLCsWKHsn3tkwQhTg6IPV8xkmbGpJ2Qdp/5RoLvhjSrAhs8gSr8GX22ec5+FcaA=
+deploy:
+  password:
+    secure: TkSg18qyxl//VmmUhSJueJsVXUWZwQjnwpa+iAPzAEIjrfaqL0aEmexicVWcDKjUF1B7/KxUar2agf9xudJhbC5Sf15lm64m0V/gub0ioI5vOQdtAaEzG4yn0xUvLNB7mGvgTYxem+QwHIYo6vTcZTPK0Ig0TnVjrQxl6HvaYIM=
+asowani123:
+  secure: DcZ7XyV477WX66CqneoSQ061lhtsfvr6PWM/RylnBB6iq05VRd+bSMmzZ+YVULeZ4ehsdIq0/1OK4zei4uMqGQ8GQyT+kPLs7x9biNf1/yUd+v+ZJkBnLG38gcD67nMpnbeRVdLLst4f1wF9q87r7isMrPfEi54eSCez4QWeUMs=
