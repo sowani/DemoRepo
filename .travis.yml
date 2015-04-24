@@ -4,7 +4,9 @@ sudo: required
 compiler:
   - gcc
   - clang
-script: make
+script:
+  - make
+  - ./deploy
 
 deploy:
   secure: "Bmq6dB5Cfwf+LexK8e2uBe4ukmcZIq20qoVw7lEEW1z3qT7Wa/Eld3UhAoMz59Nv8ug9a15UvTJ1iVMSCQGNMiB5JPKj/zG+QHk3Ekg5zDsl4gtCleNwe8uk5tY6P2aBMP7IofBdE/Ez4Gw+GtyZ4r+ARsxdZXI4eyvHy/0Mp50="
