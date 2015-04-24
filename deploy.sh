@@ -3,6 +3,8 @@
 #ssh -o StrictHostKeyChecking=no
 
   echo -e "Starting to update demo\n"
+  echo `pwd`
+  ls
 
   #copy data we're interested in to other place
   #cp -R ../DemoRepo $HOME/DemoRepo
