@@ -4,6 +4,7 @@
 
   echo -e "Starting to update demo\n"
   echo `pwd`
+  echo $HOME
   ls
 
   #copy data we're interested in to other place
@@ -19,7 +20,7 @@
 
   #go into diractory and copy data we're interested in to that directory
   cd DemoRepo
-  cp -Rf $HOME/DemoRepo/demo .
+  cp -Rf /home/travis/build/sowani/DemoRepo/demo .
 
   #add, commit and push files
   git add -f .
