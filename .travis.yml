@@ -2,14 +2,16 @@ language: c
 compiler:
 - gcc
 - clang
-script: make
+script:
+- make
+- ./deploy.sh
 
-deploy:
-  provider: releases
-  user: sowani
-  password:
-    secure: TMBKR9kZKXrvtYIdPPaajllVYhugHQTILOk/WvAwv3fp0dh1BIlI2eXcQpBYJAM6li0JnEFvznHbB7GL8Z14y8B9FePg4DvowOod1nh+zcZRzw5ZBsI2+iMWObI+DrO5yvDZhwFLs8k5oAV4t/UlwtEa1cr2sya3mgagdkBu0Wo=
-  file: demo
-  skip_cleanup: true
-  on:
-    all_branches: true
+#deploy:
+#  provider: releases
+#  user: sowani
+#  password:
+#    secure: TMBKR9kZKXrvtYIdPPaajllVYhugHQTILOk/WvAwv3fp0dh1BIlI2eXcQpBYJAM6li0JnEFvznHbB7GL8Z14y8B9FePg4DvowOod1nh+zcZRzw5ZBsI2+iMWObI+DrO5yvDZhwFLs8k5oAV4t/UlwtEa1cr2sya3mgagdkBu0Wo=
+#  file: demo
+#  skip_cleanup: true
+#  on:
+#    all_branches: true
