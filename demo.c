@@ -1,7 +1,8 @@
+/* test code */
 #include <stdio.h> 
 
 int main (void) 
 { 
-  printf ("hello!\n"); 
+  printf ("This is a demo!\n"); 
   return (0); 
 } 
