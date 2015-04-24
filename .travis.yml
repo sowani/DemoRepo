@@ -1,6 +1,6 @@
 # Sample yml file.
 language: c
-sudo: required
+#sudo: required
 compiler:
   - gcc
   - clang
