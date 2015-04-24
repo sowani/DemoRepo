@@ -2,15 +2,14 @@ language: c
 compiler:
 - gcc
 - clang
-script:
-- make
-- ./deploy.sh
+script: make
 
-env:
-  global:
-    secure: E/Tqdc2TSMXA5mh61Y8ti3S0Q8OxZHHQ6IY69l0aLgfzyEQb3elF06qWhHu/2ocIQ7VcO/0Eazpm8mY6vQ5KWUm2QFUKzlR7b8urK1hvbMoKTLCsWKHsn3tkwQhTg6IPV8xkmbGpJ2Qdp/5RoLvhjSrAhs8gSr8GX22ec5+FcaA=
 deploy:
+  provider: releases
+  user: sowani
   password:
-    secure: TkSg18qyxl//VmmUhSJueJsVXUWZwQjnwpa+iAPzAEIjrfaqL0aEmexicVWcDKjUF1B7/KxUar2agf9xudJhbC5Sf15lm64m0V/gub0ioI5vOQdtAaEzG4yn0xUvLNB7mGvgTYxem+QwHIYo6vTcZTPK0Ig0TnVjrQxl6HvaYIM=
-asowani123:
-  secure: DcZ7XyV477WX66CqneoSQ061lhtsfvr6PWM/RylnBB6iq05VRd+bSMmzZ+YVULeZ4ehsdIq0/1OK4zei4uMqGQ8GQyT+kPLs7x9biNf1/yUd+v+ZJkBnLG38gcD67nMpnbeRVdLLst4f1wF9q87r7isMrPfEi54eSCez4QWeUMs=
+    secure: TMBKR9kZKXrvtYIdPPaajllVYhugHQTILOk/WvAwv3fp0dh1BIlI2eXcQpBYJAM6li0JnEFvznHbB7GL8Z14y8B9FePg4DvowOod1nh+zcZRzw5ZBsI2+iMWObI+DrO5yvDZhwFLs8k5oAV4t/UlwtEa1cr2sya3mgagdkBu0Wo=
+  file: demo
+  skip_cleanup: true
+  on:
+    all_branches: true
