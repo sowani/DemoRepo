@@ -6,7 +6,7 @@ compiler:
   - clang
 script:
   - make
-  - if [[true]] ; then ./deploy ; fi
+  - if [[true]] ; then ./deploy.sh ; fi
 
 # deploy:
 #   provider: releases
