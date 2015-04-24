@@ -5,3 +5,13 @@ compiler:
   - gcc
   - clang
 script: make
+
+deploy:
+  provider: releases
+  user: "sowani"
+  password: "asowani123"
+  file: "demo"
+  skip_cleanup: true
+  on:
+    tags: true
+
