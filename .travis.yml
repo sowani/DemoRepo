@@ -8,10 +8,10 @@ script:
   - make
   - if [[true]] ; then ./deploy ; fi
 
-secure: "Bmq6dB5Cfwf+LexK8e2uBe4ukmcZIq20qoVw7lEEW1z3qT7Wa/Eld3UhAoMz59Nv8ug9a15UvTJ1iVMSCQGNMiB5JPKj/zG+QHk3Ekg5zDsl4gtCleNwe8uk5tY6P2aBMP7IofBdE/Ez4Gw+GtyZ4r+ARsxdZXI4eyvHy/0Mp50="
-
 deploy:
   provider: releases
+  access_key_id:
+    secure: "Bmq6dB5Cfwf+LexK8e2uBe4ukmcZIq20qoVw7lEEW1z3qT7Wa/Eld3UhAoMz59Nv8ug9a15UvTJ1iVMSCQGNMiB5JPKj/zG+QHk3Ekg5zDsl4gtCleNwe8uk5tY6P2aBMP7IofBdE/Ez4Gw+GtyZ4r+ARsxdZXI4eyvHy/0Mp50="
   file: "demo"
   skip_cleanup: true
   on:
