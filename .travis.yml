@@ -1,3 +1,4 @@
+# Sample yml file.
 language: c
 sudo: required
 compiler:
