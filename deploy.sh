@@ -17,11 +17,12 @@
 
   #go into diractory and copy data we're interested in to that directory
   cd DemoRepo
-  cp -Rf $HOME/DemoRepo/* .
+  cp -Rf $HOME/DemoRepo/demo .
 
   #add, commit and push files
   git add -f .
   git commit -m "push demo"
+  git pull origin master
   git push origin master
 
   echo -e "Done magic with coverage\n"
