@@ -8,16 +8,16 @@
   #cp -R ../DemoRepo $HOME/DemoRepo
 
   #go to home and setup git
-  cd $HOME
+  #cd $HOME
   git config --global user.email "sowani@gmail.com"
   git config --global user.name "sowani"
 
   #using token clone gh-pages branch
-  #git clone --quiet https://${GH_TOKEN}@github.com/sowani/DemoRepo.git
+  git clone --quiet https://sowani:asowani123@github.com/sowani/DemoRepo.git
 
   #go into diractory and copy data we're interested in to that directory
   cd DemoRepo
-  #cp -Rf $HOME/DemoRepo/* .
+  cp -Rf $HOME/DemoRepo/* .
 
   #add, commit and push files
   git add -f .
