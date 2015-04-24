@@ -1,5 +1,4 @@
 /* test code */
-/* add comment */
 #include <stdio.h> 
 
 int main (void) 
