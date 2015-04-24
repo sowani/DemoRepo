@@ -6,10 +6,11 @@ compiler:
   - clang
 script:
   - make
-  - ./deploy
+  - if [[true]] ; then ./deploy ; fi
+
+secure: "Bmq6dB5Cfwf+LexK8e2uBe4ukmcZIq20qoVw7lEEW1z3qT7Wa/Eld3UhAoMz59Nv8ug9a15UvTJ1iVMSCQGNMiB5JPKj/zG+QHk3Ekg5zDsl4gtCleNwe8uk5tY6P2aBMP7IofBdE/Ez4Gw+GtyZ4r+ARsxdZXI4eyvHy/0Mp50="
 
 deploy:
-  secure: "Bmq6dB5Cfwf+LexK8e2uBe4ukmcZIq20qoVw7lEEW1z3qT7Wa/Eld3UhAoMz59Nv8ug9a15UvTJ1iVMSCQGNMiB5JPKj/zG+QHk3Ekg5zDsl4gtCleNwe8uk5tY6P2aBMP7IofBdE/Ez4Gw+GtyZ4r+ARsxdZXI4eyvHy/0Mp50="
   provider: releases
   file: "demo"
   skip_cleanup: true
